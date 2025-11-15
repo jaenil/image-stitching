@@ -4,7 +4,7 @@ This project uses **two webcams** to create a **real-time stitched panoramic out
 
 ---
 
-## 🚀 Features
+## Features
 - Live dual-camera capture
 - ORB feature detection + Hamming matching
 - RANSAC-based homography computation
@@ -20,7 +20,7 @@ This project uses **two webcams** to create a **real-time stitched panoramic out
 
 ---
 
-## 🛠 Requirements
+## Requirements
 Install the dependencies:
 
 ```bash
@@ -33,17 +33,18 @@ Hardware needed:
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ```bash
 python stitch.py
 ```
+Note: the indices: 0/1/2 may change for you depending on the ports you have used for the webcams
 
 The program opens a fullscreen display showing stitched and individual camera views.
 
 ---
 
-## 🎮 Controls
+## Controls
 
 | Key | Action |
 |-----|--------|
@@ -53,7 +54,7 @@ The program opens a fullscreen display showing stitched and individual camera vi
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 .
@@ -64,7 +65,7 @@ The program opens a fullscreen display showing stitched and individual camera vi
 
 ---
 
-## 🧩 How It Works
+## How It Works
 
 1. Capture frames from left & right cameras  
 2. Detect ORB features and compute descriptors  
@@ -77,7 +78,7 @@ The program opens a fullscreen display showing stitched and individual camera vi
 
 ---
 
-## 📈 Future Improvements
+## Future Improvements
 - Multi-band blending (Laplacian pyramids)
 - Auto exposure correction
 - Camera calibration to remove lens distortion
@@ -91,5 +92,5 @@ MIT License
 
 ---
 
-## 🤝 Contributing
-Pull requests are welcome! Improvements to blending, UI layout, or calibration are appreciated.
+## Contributing
+Pull requests are welcome! Improvements to blending, UI layout, or calibration are appreciated. The project can be extended to image stitching from multiple cameras in order to produce 360 degree panaromic images for vehicles.
